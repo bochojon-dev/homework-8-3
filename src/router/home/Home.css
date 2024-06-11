@@ -22,3 +22,6 @@
   justify-content: center;
   gap: 36px;
 }
+.home button {
+  margin: 8px 12px 8px 0;
+}

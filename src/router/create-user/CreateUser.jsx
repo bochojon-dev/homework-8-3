@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CreateUser.css";
 // import { useDispatch } from "react-redux";
 // import { addToUsers } from "../../context/userSlice";
@@ -44,6 +44,7 @@ function CreateUser() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Accept: "aplication/json",
       },
       body: JSON.stringify(user),
     })
@@ -51,6 +52,7 @@ function CreateUser() {
       .catch((err) => console.log(err));
     e.target.reset();
   };
+
   return (
     <div className="create__user">
       <h2>Create User</h2>
