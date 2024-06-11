@@ -5,6 +5,7 @@ import male from "../../assets/male-avatar-boy-face-man-user-9.svg";
 import female from "../../assets/female-avatar-girl-face-woman-user-2.svg";
 
 function Home() {
+  let [reload, setReload] = useState(true);
   let [data, setData] = useState(null);
   let API_URL = "http://localhost:2005/users";
   useEffect(() => {
@@ -12,7 +13,12 @@ function Home() {
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => console.log(err));
-  }, []);
+  }, [reload]);
+  let handleDelete = (id) => {
+    fetch(`${API_URL}/${id}`, {
+      method: "DELETE",
+    }).then((res) => setReload((p) => !p));
+  };
 
   return (
     <div className="home">
@@ -28,6 +34,7 @@ function Home() {
               <b>{users?.lname}</b>
             </p>
             <p>{users.age}</p>
+            <button onClick={() => handleDelete(users.id)}>remove</button>
           </div>
         ))}
       </div>
