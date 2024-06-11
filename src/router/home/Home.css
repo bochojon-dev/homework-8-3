@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -13,7 +13,7 @@
   color: dodgerblue;
   font-size: 4vw;
   padding: 48px 0;
-  margin: 48px 0;
+  margin: 160px 0 50px;
 }
 .home,
 .users {
