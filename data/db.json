@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "age": "19",
+      "name": {
+        "fname": "Maqsadjon",
+        "lname": "Bochojon"
+      },
+      "gender": "male"
+    },
+    {
+      "id": "2",
+      "age": "20",
+      "name": {
+        "fname": "Kamola",
+        "lname": "Coral"
+      },
+      "gender": "female"
+    },
+    {
+      "id": "c064",
+      "fname": "wdwd",
+      "lname": "cev",
+      "age": "444",
+      "gender": "male"
+    }
+  ]
+}

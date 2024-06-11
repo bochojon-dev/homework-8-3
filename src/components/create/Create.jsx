@@ -6,6 +6,7 @@ const Create = () => {
     let formData = new FormData(event.target);
     let user = Object.fromEntries(formData.entries);
     console.log(user);
+    event.target.reset();
   };
   return (
     <div>

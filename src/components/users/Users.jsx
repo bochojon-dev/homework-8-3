@@ -9,25 +9,19 @@ function Users({ data }) {
   let dispatch = useDispatch();
   return (
     <div className="users__wrapper">
-      {data?.map((users) => (
-        <div key={users.name} className="users__card">
+      {/* {data?.map((users) => (
+        <div key={users.id} className="users__card">
           <img src={users.gender === "male" ? male : female} alt="user" />
-          <h2>{users.name}</h2>
+          <h2>{users.name.fname}</h2>
           <p>
-            <b>{users.profession}</b>
-          </p>
-          <p>
-            <i>{users.address}</i>
+            <b>{users.name.lname}</b>
           </p>
           <p>{users.age}</p>
-          <p>
-            <u>{users.phone}</u>
-          </p>
           <button onClick={() => dispatch(removeFromUsers(users))}>
             Remove
           </button>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 }

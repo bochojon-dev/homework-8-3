@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 function AllUsers() {
   let users = useSelector((state) => state.users.value);
-  //   console.log(users);
   return (
     <div className="all__users">
       {users.length ? <Users data={users} /> : <Empty />}

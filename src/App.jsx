@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Create />
+      {/* <Create /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create-user" element={<CreateUser />} />

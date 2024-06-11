@@ -1,10 +1,24 @@
 .home {
   width: 100%;
   height: calc(100vh - 80px);
-  background: linear-gradient(40deg, #fbc8fb, #b6dbff);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  margin-top: 12 0px;
+}
+.home .home_title {
   color: dodgerblue;
-  display: grid;
-  place-items: center;
   font-size: 4vw;
+  padding: 48px 0;
+  margin: 48px 0;
+}
+.home,
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
 }
